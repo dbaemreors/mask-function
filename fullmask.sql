@@ -16,3 +16,10 @@ $$ LANGUAGE plpgsql;
 use:
 
 UPDATE table SET column_name = custom_mask(column_name, '*');
+
+
+UPDATE table SET
+    column_name1 = custom_mask(column_name1, '*'),
+    column_name2 = custom_mask(column_name2, '*'),
+    column_name3 = custom_mask(column_name3, '*');
+
