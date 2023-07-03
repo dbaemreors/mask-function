@@ -22,7 +22,7 @@ UPDATE table SET column_name = custom_masker(column_name);
 
 /*   for multiple columns:  */
 
-UPDATE table
-SET column_name1 = custom_masker(column_name1),
+UPDATE table SET 
+    column_name1 = custom_masker(column_name1),
     column_name2 = custom_masker(column_name2),
     column_name3 = custom_masker(column_name3);
