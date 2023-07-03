@@ -12,15 +12,15 @@ RETURN masked_text;
 END;
 $$ LANGUAGE plpgsql;
 
-use:
+/*  use:  */
 
 
-for 1 column:
+/*  for 1 column:   */
 
 UPDATE table SET column_name = custom_masker(column_name);
 
 
-for multiple columns:
+/*   for multiple columns:  */
 
 UPDATE table
 SET column_name1 = custom_masker(column_name1),
